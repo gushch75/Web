@@ -1,0 +1,104 @@
+#from turtle import color
+
+#colors = [(a) for a in input('Введите значения через пробел ').split()]
+#for a in colors:
+   # print( type(colors))
+
+   
+#[item for item in colors if item.isnumeric()]  
+
+
+#colors = {'green','yellow','blue',123}
+#print (type(colors))
+#for a in colors:
+     #  if(type(a)==str):
+         # print (a)
+         # print ("Это строка") 
+  #     else:
+       #     print(a)
+         #   print ("Это число") 
+
+
+#my_list = ['9', 'sam', 'USA', 25]
+#[item for item in my_list if item.isdigit()]
+#print (my_list)
+#
+#sum = lambda x,y: x*y
+
+#def calc (op,a,b):#
+      #print (op(a,b))
+
+#calc (sum,4,5)
+#data = (map(int,input().split()))
+#for e in data:
+
+      #    print (e) 
+
+#x = ['Jack', 18, 'IM-101', 99.9]
+#print (filter(lambda e: isinstance(e, int), x))
+#[e for e in x if isinstance(e, int)]
+s = str(input('Введите данные через запятую: '))
+s=[s]
+print(s)
+#s = ["0 1.2.3, 11, 22, 33, 56.52, .225, 'rtr','rtr', 'NAN'"]
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+lst = str.split(',')     
+
+for element in lst:
+  
+    print(element, end='')
+    if is_number(element):
+        print(" - число")
+    else:
+       print("- не число")
+
+substr=str(input('Введите название элемента, который нужно найти : '))
+#substr ='rtr'
+
+
+count1 = s.count(substr)
+print(count1)
+
+s=[s]
+print(s)
+#s.index('rtr')
+str = "'This is a test','12'"
+s='12'
+print(str.split())
+str.index(s)
+print("Book index- ", s)
+
+lst = ["Apple", "Mango", "Banana", "Mango", "Cherry"]
+print("Fruits:")
+print(lst)
+
+# Accessing Index of the List Element
+x = lst.index('Mango')  # Duplicate element
+print("Index of Mango: ", x)
+
+lst = ["Apple", "Mango", "Banana", "Mango", "Cherry"]
+print("Fruits:")
+print(lst)
+
+# Defining start end for the Element
+ele = "Mango"
+start = 2
+end = 4
+
+# Accessing Index of the List Element
+x = lst.index(ele, start, end)
+print("Index of Mango: ", x)
+a = []  # заводим пустой список
+n = int(input('Введите количество элементов списка:  '))  # считываем количество элемент в списке
+for i in range(n):  
+    new_element = str(input())  # считываем очередной элемент
+    a.append(new_element)  # добавляем его в список
+    # последние две строки можно было заменить одной:
+    # a.append(int(input()))
+print(a)

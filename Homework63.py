@@ -35,7 +35,7 @@ path = 'file2.txt'
 data = open(path, 'r')
 for line1 in data:
  print('Текст считанный из файла:',line1)
-#data.close()
+
 
 
 def rle_decode(data): #декодирование

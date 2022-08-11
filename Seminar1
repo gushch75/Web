@@ -1,0 +1,24 @@
+def print_number(number):
+    for i in range ( -number,number+1):
+        print (i,end=" ")
+
+n= input ("Введите число: ")
+try :
+    n=int(n)
+    print_number(n)
+except:
+    print ("Введите целое число")   
+
+a1 = float(input ('Введите первое число :' ))
+a1 *= 10
+a1 = int(a1)
+a1%=10     
+print (a1)    
+
+num = int(input ('Введите число'))
+def krat (a):
+    if num %5 ==0 and not num %30 ==0 and num %10 or num %15==0 and not num %30 ==0:
+        print ('Да')
+    else:
+        print ('Нет')
+krat(num)        
